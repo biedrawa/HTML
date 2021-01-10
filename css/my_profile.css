@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #dfdbdb;
+  font-family: 'Fajen', 'Times New Roman', Times, serif;
+}
+
+.gradient-text {
+  background-color: #CA4246;
+
+  background-image: linear-gradient(45deg,
+      #CA4246 16.666%,
+      #E16541 16.666%,
+      #E16541 33.333%,
+      #F18F43 33.333%,
+      #F18F43 50%,
+      #8B9862 50%,
+      #8B9862 66.666%,
+      #476098 66.666%,
+      #476098 83.333%,
+      #A7489B 83.333%);
+
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+
+  40% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+
+  80% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 650%;
+  }
+}
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #CA4246 50%, #476098 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position: fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+body {
+  background-color: #555b66;
+}
+
+header {
+  margin-top: 1em;
+  margin-top: calc(50vh - 3em);
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  cursor:no-drop;
+  width: 605px;
+}
+
+main {
+  height: 90vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(rgb(78, 75, 75),#1f1e1e);
+}
+
+
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  background-color: #1f1e1e;
+  color: #dfdbdb;
+}
+
+form button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav form input {
+  margin: 10px 0px;
+}
+
+img {
+  border: 1px solid rgb(71, 68, 68);
+  border-width: 8px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  font-size: 20px;
+  padding-right: 10px;
+  color: #000000;
+  
+  text-decoration: none;
+}
+
+nav div a{
+  background-color: #555b66;
+}
+
+.portal-name {
+  font-weight: bold;
+}
+
+
+nav button {
+  padding: 2px;
+  color: #000000;
+  background-color: #555b66;
+  border-radius: 4px;
+  border-color: #000000;
+}
+
+section{
+  height: 250px;
+}
+
+nav{
+  background: #1f1e1ee1;
+}
+
+nav div {
+    padding: 10px 0;
+
+}
+
+nav div a {
+  border: 2px #000000 solid;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#prawo ul li a {
+  font-weight: bold;
+  color: #000000;
+}
+
+#prawo ul{
+  margin-left: 30px;
+  list-style-type:square;
+}
+
+#prawo ul li a:hover {
+  font-weight: 1000;
+}
+
+#prawo {
+  background: radial-gradient(rgb(129, 123, 123), #797070);
+  width: 1100px; 
+  height: 100%;
+  float: right;
+  padding: 7px;
+  box-sizing: border-box;
+
+}
+
+#lewo{
+  width: 200px;
+  float: left;
+}
+
+main{
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#srodek{
+  clear: both;
+}
